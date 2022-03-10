@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <odoo>
     <record id="group_menu_user" model="res.groups">
         <field name="name">User</field>
@@ -7,7 +8,7 @@
     </record>
     <record id="group_menu_kitchener" model="res.groups">
         <field name="name">Kitcheners</field>
-        <field name="=category_id" ref="base.module_category_restaurant"/>
+        <field name="category_id" ref="base.module_category_restaurant"/>
         <field name="implied_ids" eval="[(4, ref('group_menu_user'))]"/>
         <field name="users" eval="[(4, ref('base.user_admin'))]"/>
     </record>

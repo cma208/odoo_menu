@@ -1,7 +1,7 @@
 from odoo import models, fields, api
 
 
-class MenuDishes(model.Model):
+class MenuDishes(models.Model):
     _name='menu.dishes'
     _description='Carito Ardiles Menu'
     _order='name, cost_price'
