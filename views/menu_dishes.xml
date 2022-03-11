@@ -18,9 +18,11 @@
         <field name="model">menu.dishes</field>
         <field name="arch" type="xml">
             <form>
-                <field name="name"/>
-                <field name="cost_price"/>
-                <field name="notes"/>
+                <group>
+                    <field name="name"/>
+                    <field name="cost_price"/>
+                    <field name="notes"/>
+                </group>
             </form>
         </field>
     </record>

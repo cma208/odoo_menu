@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 acl_menu_dishes,menu.dishes,model_menu_dishes,,1,1,1,1
+acl_menu_orders,restaurant.menu.orders.wizard,model_restaurant_menu_orders_wizard,,1,1,1,1

@@ -9,6 +9,7 @@
     'data': [
         #'security/groups.xml',
         'security/ir.model.access.csv',
+        'wizard/menu_orders.xml',
         #'data/data.dishes.csv',
         'views/menu_dishes.xml',
     ],
