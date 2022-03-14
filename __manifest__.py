@@ -13,6 +13,7 @@
         # 'data/data.dishes.csv',
         'views/menu_dishes.xml',
         'views/pending_orders.xml',
+        'views/dishes_ingredients.xml'
     ],
     # 'demo': ['demo.xml'],
 }

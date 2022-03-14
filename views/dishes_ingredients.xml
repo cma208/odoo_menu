@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+    <record id="dishes_ingredients_action" model="ir.actions.act_window">
+        <field name="name">Dishes Ingredients</field>
+        <field name="res_model">dishes.ingredients</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Ingredients"
+              id="dishes_ingredients_menu"
+              parent="menu_base_menu"
+              action="dishes_ingredients_action"/>
+
+    <record id="dishes_ingredients_view_form" model="ir.ui.view">
+        <field name="name">Dishes Ingredients Form</field>
+        <field name="model">dishes.ingredients</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="ingr_name"/>
+                    <field name="portion_desc"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="dishes_ingredients_view_tree" model="ir.ui.view">
+        <field name="name">Ingredients</field>
+        <field name="model">dishes.ingredients</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="ingr_name"/>
+                <field name="portion_desc"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

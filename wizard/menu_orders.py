@@ -10,6 +10,7 @@ class RestaurantMenuOrders(models.TransientModel):
     menu_dishes = fields.Many2many('menu.dishes', string='Orders')
     order_date = fields.Date(default=fields.Date.today)
 
+
     def add_menu_orders(self):
         self.env['pending.orders'].create({
             'order_date': self.order_date,
