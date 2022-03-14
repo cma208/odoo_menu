@@ -8,3 +8,4 @@ class MenuDishes(models.Model):
     name = fields.Char('Dish Name')
     cost_price = fields.Float('Dish Price', digits='Dish Price')
     notes = fields.Text('Dish Description')
+    ingredients=fields.Many2many('dishes.ingredients','ingr_name','portion_desc','Ingredients')
