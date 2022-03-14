@@ -7,11 +7,12 @@
     'version': '14',
     'depends': ['base', 'sale'],
     'data': [
-        #'security/groups.xml',
+        # 'security/groups.xml',
         'security/ir.model.access.csv',
         'wizard/menu_orders.xml',
-        #'data/data.dishes.csv',
+        # 'data/data.dishes.csv',
         'views/menu_dishes.xml',
+        'views/pending_orders.xml',
     ],
-    #'demo': ['demo.xml'],
+    # 'demo': ['demo.xml'],
 }

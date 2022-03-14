@@ -2,8 +2,6 @@
 
 
 <odoo>
-    <menuitem name="Orders" id="menu_orders_menu" parent="menu_base_menu" action="menu_dishes_action"/>
-
     <record id="menu_orders_view_form" model="ir.ui.view">
         <field name="name">Orders</field>
         <field name="model">restaurant.menu.orders.wizard</field>
@@ -15,16 +13,33 @@
                     <field name="order_date"/>
                     <field name="menu_dishes"/>
                 </group>
+                <group>
+                    <footer>
+                        <button string='Buy' type='object' name='add_menu_orders' class='btn-primary'/>
+                        <button string='Cancel' class='btn-default' special='cancel'/>
+                    </footer>
+                </group>
             </form>
         </field>
     </record>
 
-    <record id="menu_orders_wizard" model="ir.actions.act_window">
+    <act_window id="menu_orders_wizard"
+                name="Orders Wizard"
+                res_model="restaurant.menu.orders.wizard"
+                view_mode="form" target="new"/>
+
+    <menuitem name="Orders"
+              id="menu_orders_menu"
+              parent="menu_base_menu"
+              action="menu_orders_wizard"/>
+
+
+    <!--record id="menu_orders_wizard" model="ir.actions.act_window">
         <field name="name">Orders Wizard</field>
         <field name="res_model">restaurant.menu.orders.wizard</field>
         <field name="type">ir.actions.act_window</field>
         <field name="view_mode">form</field>
         <field name="view_id" ref="menu_orders_view_form"/>
         <field name="target">new</field>
-    </record>
+    </record>-->
 </odoo>
