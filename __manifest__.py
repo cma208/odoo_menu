@@ -7,7 +7,7 @@
     'version': '14',
     'depends': ['base', 'sale'],
     'data': [
-        # 'security/groups.xml',
+        'security/groups.xml',
         'security/ir.model.access.csv',
         'wizard/menu_orders.xml',
         # 'data/data.dishes.csv',
